@@ -1,11 +1,11 @@
 
 # F1 Analysis
 
-## Descrizione
-Questo progetto esegue un'analisi dei dati di Formula 1, combinando vari dataset relativi a risultati di gare, qualifiche, soste ai box, classifiche piloti e costruttori. Viene eseguita una fase di preprocessamento dei dati, seguita da analisi visive utilizzando librerie come Bokeh, Plotly e Seaborn.
+## General overview
+This project performs an analysis of Formula 1 data, combining various datasets related to race results, qualifying sessions, pit stops, driver standings, and constructor standings. A data preprocessing phase is conducted, followed by visual analyses using libraries such as Bokeh, Plotly, and Seaborn.
 
-## Requisiti
-Le seguenti librerie Python sono necessarie per eseguire il progetto:
+## Requirements
+The following Python libraries are required to run the project:
 - pandas
 - numpy
 - matplotlib
@@ -15,26 +15,24 @@ Le seguenti librerie Python sono necessarie per eseguire il progetto:
 - bokeh
 - openpyxl
 
-## Installazione
-Per installare le dipendenze, eseguire:
+## Installation
+To install the dependencies, run:
 ```bash
 pip install pandas numpy matplotlib seaborn plotly folium bokeh openpyxl
 ```
 
 ## Dataset
-Il progetto utilizza diversi dataset Excel uniti per fornire informazioni complete sui piloti, i costruttori e le gare di Formula 1. Il file Excel contiene fogli che rappresentano:
-- Risultati di gara
-- Risultati di qualifiche
-- Soste ai box
-- Classifiche piloti e costruttori
+The project uses several combined Excel datasets (can be downloaded on Kaggle) to provide comprehensive information on drivers, constructors, and Formula 1 races. The Excel file contains sheets representing:
 
-## Analisi
-Le seguenti operazioni di preprocessamento vengono eseguite:
-1. **Unione dei dati**: vengono effettuati join tra le tabelle utilizzando chiavi come `driverId`, `constructorId`, `raceId` e `statusId` per arricchire i dati con i nomi dei piloti, costruttori e dettagli delle gare.
-2. **Conversione dei tempi**: i dati relativi ai tempi vengono convertiti da millisecondi a minuti per una migliore leggibilità.
+Race results
+Qualifying results
+Pit stops
+Driver and constructor standings
 
-## Visualizzazioni
-- **Grafici interattivi**: Utilizzando Bokeh, vengono creati grafici per visualizzare l'andamento delle vittorie e dei punti per anno, con la possibilità di filtrare per pilota o costruttore.
+## Analysis
+The following preprocessing operations are performed:
+1. **Data merging**: Tables are joined using keys such as `driverId`, `constructorId`, `raceId`, and `statusId` to enrich the data with driver names, constructor details, and race information.
+2. **Time conversion**: Time-related data is converted from milliseconds to minutes for better readability.
 
-## Licenza
-Questo progetto è concesso sotto licenza MIT.
+## Data Visualization
+- **Interactive charts**: Using Bokeh, charts are created to visualize the trends in wins and points by year, with the option to filter by driver or constructor.
